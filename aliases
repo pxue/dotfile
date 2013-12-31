@@ -1,0 +1,5 @@
+alias ll="ls -alhG"
+alias ..="cd .."
+alias pull="hg pull -u"
+alias l="ls -l"
+alias speedtest="curl http://speedtest.wdc01.softlayer.com/downloads/test10.zip > /dev/null"
