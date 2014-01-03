@@ -3,3 +3,6 @@ username = Paul Xue <paulxue@chango.com>
 
 [extensions]
 hgext.purge=
+
+[hooks]
+pre-commit = hg pull -u

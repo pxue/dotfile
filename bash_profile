@@ -1,13 +1,13 @@
 # flow control
 stty -ixon -ixoff
 
-### Aliases
-alias ll="ls -alhG"
-alias ..="cd .."
-alias pull="hg pull -u"
-alias l="ls -l"
-alias speedtest="curl http://speedtest.wdc01.softlayer.com/downloads/test10.zip > /dev/null"
-alias work="cd /apps/"
+# Load the shell dotfiles, and then some:
+# * ~/.path can be used to extend `$PATH`.
+# * ~/.extra can be used for other settings you don’t want to commit.
+for file in ~/.{path,exports,aliases,functions,extra}; do
+        [ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
+unset file
 
 ### Prompt Colors 
 # Modified version of @gf3’s Sexy Bash Prompt 
@@ -17,6 +17,15 @@ if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/n
 elif infocmp xterm-256color >/dev/null 2>&1; then
         export TERM=xterm-256color
 fi
+
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob
+#
+# # Append to the Bash history file, rather than overwriting it
+shopt -s histappend
+#
+# # Autocorrect typos in path names when using `cd`
+shopt -s cdspell
 
 if tput setaf 1 &> /dev/null; then
         tput sgr0
