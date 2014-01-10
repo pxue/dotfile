@@ -1,6 +1,9 @@
 # flow control
 stty -ixon -ixoff
 
+# ulimit
+ulimit -S -n 16000
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
