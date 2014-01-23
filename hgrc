@@ -4,6 +4,11 @@ username = Paul Xue <paulxue@chango.com>
 [extensions]
 hgext.purge=
 color=
+progress=
 
 [hooks]
 pre-commit = hg pull -u
+
+[alias]
+# find last deploy (use -u to specify user)
+ldep = log -k deploy -l 1
