@@ -5,6 +5,8 @@ username = Paul Xue <paulxue@chango.com>
 hgext.purge=
 color=
 progress=
+strip=
+shelve=
 
 [hooks]
 pre-commit = hg pull -u

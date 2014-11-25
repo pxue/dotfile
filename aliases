@@ -24,9 +24,27 @@ alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
-# Show/hide hidden files in Finder
+# Show/hide hidden filess in Finder
 alias showdot="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hidedot="defaults write com.apple.finder AppleShowAllFiles -bool false && # killall Finder"
 
 # Lock the screen (when going AFK)
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
+
+# Time functions
+alias unixt=unixt
+alias getutc=getutc
+
+function unixt()
+{
+    date +%s && date +%s | pbcopy
+};
+
+function getutc()
+{
+    date -u -j -f "%s" $1
+}
+
+function cds() {
+    cd "$@" && ll;
+}
