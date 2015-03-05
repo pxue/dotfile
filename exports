@@ -3,3 +3,4 @@ export GOPATH=/apps/go
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export VAGRANT_CWD=/Users/paul/vagrant
+export PATH=$PATH:/usr/local/sbin

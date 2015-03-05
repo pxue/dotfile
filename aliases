@@ -35,6 +35,10 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias unixt=unixt
 alias getutc=getutc
 
+# Github
+alias gitb="git rev-parse --abbrev-ref HEAD | pbcopy"
+alias gitr2="git rebase -i HEAD~2"
+
 function unixt()
 {
     date +%s && date +%s | pbcopy

@@ -2,7 +2,7 @@
 stty -ixon -ixoff
 
 # ulimit
-ulimit -S -n 16000
+# ulimit -S -n 16000
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -76,3 +76,5 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
