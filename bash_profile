@@ -77,4 +77,6 @@ export PS2="\[$ORANGE\]→ \[$RESET\]"
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
+. ~/dotfile/s/s.sh
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

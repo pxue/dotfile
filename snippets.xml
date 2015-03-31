@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<folders>
+    <folder>
+        <title>utility</title>
+        <snippets>
+            <snippet>
+                <title>vim space tab</title>
+                <content>:set et ts=4 sw=4 si nowrap nu
+</content>
+            </snippet>
+            <snippet>
+                <title>vim copy</title>
+                <content>!tee &gt;(pbcopy)</content>
+            </snippet>
+            <snippet>
+                <title>killall</title>
+                <content>kill -9 $(ps aux | grep '[w]orker' | awk '{print $2}')</content>
+            </snippet>
+            <snippet>
+                <title>vim json</title>
+                <content>:%!python -m json.tool</content>
+            </snippet>
+            <snippet>
+                <title>vim sudo write</title>
+                <content>:w !sudo tee %
+</content>
+            </snippet>
+            <snippet>
+                <title>surround line</title>
+                <content>:%norm yss'</content>
+            </snippet>
+            <snippet>
+                <title>append comma</title>
+                <content>:%s/$/\,/g</content>
+            </snippet>
+            <snippet>
+                <title>trailing ws</title>
+                <content>:%s/\s\+$//
+</content>
+            </snippet>
+            <snippet>
+                <title>git rm deleted</title>
+                <content>git rm $(git ls-files --deleted)</content>
+            </snippet>
+            <snippet>
+                <title>incoming on port</title>
+                <content>ss -r '( sport = :7777 )' | awk '{print $5}' | awk -F : '{print $1}' | awk '{if(NR&gt;1)print}' | sort | uniq</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>boxy</title>
+        <snippets>
+            <snippet>
+                <title>restart boxy</title>
+                <content>sudo service boxy stop &amp;&amp; sleep 10 &amp;&amp; sudo service boxy start &amp;&amp; ps aux | grep boxy &amp;&amp; journalctl -fl</content>
+            </snippet>
+            <snippet>
+                <title>vagrant</title>
+                <content>vagrant exec 'go build -x $BOXYPATH/http.go'</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>bidder</title>
+        <snippets>
+            <snippet>
+                <title>restart</title>
+                <content>sudo stop bidder &amp;&amp; sleep 2 &amp;&amp; sudo start bidder &amp;&amp; tail -F /var/log/bidder/bidder_stdout.log</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>as3</title>
+        <snippets>
+            <snippet>
+                <title>conn/get</title>
+                <content>import changospike;
+as3_conn = changospike.connect_to_aerospike([("frequency01",3000),("frequency02",3000),("frequency03", 3000),("frequency04", 3000)], timeout);
+changospike.get_freq(as3_conn, token);</content>
+            </snippet>
+            <snippet>
+                <title>put freq token</title>
+                <content>ascli put test test freqtoken '{"campaign": { "22080": [ 1391644862 ] }, "campaign_io": { "16065": [ 1391644862 ] }, "account": { "1": [ 1391644862 ] }}'</content>
+            </snippet>
+            <snippet>
+                <title>compile test</title>
+                <content>gcc -g -O0 -I /home/paul/code/aerospike-udf/include/ /home/paul/code/aerospike-udf/lib/libaerospike_helpers.so /home/paul/code/aerospike-udf/lib/libfreq.so -o test test.c</content>
+            </snippet>
+            <snippet>
+                <title>ld_path</title>
+                <content>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/paul/aerospike-udf/lib</content>
+            </snippet>
+        </snippets>
+    </folder>
+    <folder>
+        <title>shit</title>
+        <snippets>
+            <snippet>
+                <title>cm</title>
+                <content>gcc ujdecode.so ultrajsondec.so -lm -shared -fPIC -o request.so request.c</content>
+            </snippet>
+            <snippet>
+                <title>lua</title>
+                <content>LD_LIBRARY_PATH=./ /usr/local/openresty/luajit/bin/lua request.lua</content>
+            </snippet>
+        </snippets>
+    </folder>
+</folders>

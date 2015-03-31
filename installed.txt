@@ -1,0 +1,15 @@
+ClipMenu
+UTC Menu Clock
+Iterm2
+knock
+Mou
+Popcorntime
+postgres
+spotify
+utorrent
+vlc
+PSequel
+Dropbox
+
+Wire
+
