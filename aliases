@@ -38,6 +38,7 @@ alias getutc=getutc
 # Github
 alias gitb="git rev-parse --abbrev-ref HEAD | pbcopy"
 alias gitr2="git rebase -i HEAD~2"
+alias upall="find . -type d -follow -depth 1 -exec git --git-dir={}/.git --work-tree={} fetch && git --git-dir={}/.git --work-tree={} remote prune origin \;"
 
 function unixt()
 {
