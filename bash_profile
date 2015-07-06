@@ -26,6 +26,7 @@ shopt -s nocaseglob
 #
 # # Append to the Bash history file, rather than overwriting it
 shopt -s histappend
+HISTFILESIZE=3000
 #
 # # Autocorrect typos in path names when using `cd`
 shopt -s cdspell

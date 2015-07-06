@@ -5,9 +5,7 @@ alias l="ls -lG"
 alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-
-# Mercurial
-alias pull="hg pull -u"
+alias tree="find . \! -path \"*/.git*\" -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # Utility
 alias speedtest="curl http://speedtest.wdc01.softlayer.com/downloads/test10.zip > /dev/null"
@@ -52,4 +50,8 @@ function getutc()
 
 function cds() {
     cd "$@" && ll;
+}
+
+function b64() {
+    echo -n $1 | openssl base64;
 }
