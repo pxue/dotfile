@@ -895,18 +895,29 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSToolbar Configuration Terminal Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>2</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>0</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>209 574 924 485 0 0 2560 1417 </string>
+	<string>97 348 605 485 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>196 106 1797 1049 0 0 2560 1417 </string>
+	<string>0 0 1680 1050 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>443 916 712 419 0 0 2560 1417 </string>
+	<string>89 90 1340 899 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>892 994 712 419 0 0 2560 1417 </string>
+	<string>95 430 712 419 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>786 682 712 419 0 0 2560 1417 </string>
+	<string>533 633 712 419 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>629 166 1048 951 0 0 2560 1417 </string>
+	<string>629 698 712 419 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>227 192 1132 707 0 0 1680 1050 </string>
 	<key>NeverWarnAboutShortLivedSessions_7E826FA6-4B72-47A2-8856-6EE1B86E914A</key>
@@ -1627,6 +1638,10 @@
 	</array>
 	<key>NoSyncNeverRemindPrefsChangesCopy</key>
 	<true/>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>455465926.50724101</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>458771479.33593398</real>
 	<key>OnlyWhenMoreTabs</key>
 	<false/>
 	<key>OpenArrangementAtStartup</key>
@@ -1693,7 +1708,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-03-24T18:21:15Z</date>
+	<date>2015-07-16T20:31:08Z</date>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>Show Toolbelt</key>
@@ -1701,7 +1716,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SmartPlacement</key>
@@ -1771,6 +1786,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20141103</string>
+	<string>2.1.1</string>
 </dict>
 </plist>

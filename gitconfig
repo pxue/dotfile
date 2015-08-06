@@ -3,6 +3,7 @@
 	excludesfile = /Users/500px/.gitignore_global
 [user]
 	name = Paul Xue
+	email = pxue@500px.com
 [push]
 	default = current
 [url "git@github.com:"]
