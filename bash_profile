@@ -86,3 +86,9 @@ export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh
+
+# autoenv
+source /usr/local/bin/activate.sh
