@@ -92,3 +92,6 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # autoenv
 source /usr/local/bin/activate.sh
+
+export NVM_DIR="/Users/pxue/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

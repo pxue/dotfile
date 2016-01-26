@@ -1,9 +1,9 @@
 [core]
 	editor = vim -u NONE
-	excludesfile = /Users/500px/.gitignore_global
+	excludesfile = /Users/pxue/.gitignore_global
 [user]
-	name = Paul Xue
-	email = pxue@500px.com
+    name = "Paul Xue"
+    email = "paul.xue@pressly.com"
 [push]
 	default = current
 [url "git@github.com:"]
@@ -14,6 +14,9 @@
     undo = reset HEAD^ --mixed
     amend = commit -a --amend
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+    debranch = !git branch --merged master | grep -v master | xargs git branch -d
     logs = !git log --oneline --abbrev-commit
+    ca = !git commit -am
+    c = !git commit -m
 [merge]
 	tool = kdiff3
