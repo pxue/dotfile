@@ -10,13 +10,14 @@
     insteadOf = https://github.com/
 
 [alias]
-    up = !git fetch && git pull --rebase --prune $@
+    up = !git stash && git fetch && git pull --rebase --prune $@ && git stash pop
     undo = reset HEAD^ --mixed
     amend = commit -a --amend
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-    debranch = !git branch --merged master | grep -v master | xargs git branch -d
+    db = !git branch --merged master | grep -v master | xargs git branch -d
     logs = !git log --oneline --abbrev-commit
     ca = !git commit -am
     c = !git commit -m
+    st = !git status
 [merge]
 	tool = kdiff3

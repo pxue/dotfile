@@ -1,6 +1,4 @@
 export CC=clang
 export GOPATH=/apps/go
-export GOROOT=/usr/local/opt/go/libexec/
+export GOROOT=/usr/local/opt/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-export VAGRANT_CWD=/Users/paul/vagrant
-export HOMEBREW_GITHUB_API_TOKEN=46254932c328cbf0fa7ae9659f0221fe75e4be04
