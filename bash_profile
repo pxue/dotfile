@@ -91,7 +91,7 @@ fi
 source /usr/local/bin/virtualenvwrapper.sh
 
 # autoenv
-source /usr/local/bin/activate.sh
+source ~/dotfile/activate.sh
 autoenv_init # always run
 
 export NVM_DIR="/Users/pxue/.nvm"

@@ -19,5 +19,6 @@
     ca = !git commit -am
     c = !git commit -m
     st = !git status
+    co = checkout
 [merge]
 	tool = kdiff3
