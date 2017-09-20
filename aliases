@@ -33,10 +33,17 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 alias unixt=unixt
 alias getutc=getutc
 
-# Github
-alias gitb="git rev-parse --abbrev-ref HEAD | pbcopy"
-alias gitr2="git rebase -i HEAD~2"
-alias upall="find . -type d -follow -depth 1 -exec git --git-dir={}/.git --work-tree={} fetch && git --git-dir={}/.git --work-tree={} remote prune origin \;"
+# Github diff master and current branch
+function gdf() {
+    echo 'Commits that exist in '$1' but not in '$2':'
+    git log --graph --pretty=format:'%Cred%h%Creset %s' --abbrev-commit $2..$1
+    echo 'Commits that exist in '$2' but not in '$1':'
+    git log --graph --pretty=format:'%Cred%h%Creset %s' --abbrev-commit $1..$2
+}
+
+# Docker
+alias drmi='docker rmi $(docker images --filter "dangling=true" -q --no-trunc)'
+alias dkillall="docker ps | awk '{if (NR!=1) print $1}' | xargs docker kill"
 
 function unixt()
 {
@@ -54,4 +61,8 @@ function cds() {
 
 function b64() {
     echo -n $1 | openssl base64;
+}
+
+function b64dec() {
+    echo $1 | openssl base64 -d;
 }

@@ -88,7 +88,7 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 
 # virtualenvwrapper
-source /usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # autoenv
 source ~/dotfile/activate.sh
@@ -96,3 +96,5 @@ autoenv_init # always run
 
 export NVM_DIR="/Users/pxue/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="$HOME/.yarn/bin:$PATH"
