@@ -20,6 +20,11 @@
     r2 = !git rebase -i HEAD~2
     b = !git rev-parse --abbrev-ref HEAD
 
+[color "status"]
+    added = green
+    changed = yellow
+    untracked = normal
+
 [merge]
 	tool = kdiff3
 [rerere]
@@ -29,6 +34,8 @@
 [user]
 	name = Paul Xue
 	email = xuepaul.xp@gmail.com
+[credential]
+	helper = osxkeychain
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
