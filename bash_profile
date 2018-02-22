@@ -90,6 +90,9 @@ fi
 # virtualenvwrapper
 # source /usr/local/bin/virtualenvwrapper.sh
 
+# Google Cloud SDK completion
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
+
 # autoenv
 source ~/dotfile/activate.sh
 autoenv_init # always run
