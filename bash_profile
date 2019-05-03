@@ -70,7 +70,7 @@ export WHITE
 export BOLD
 export RESET
 
-symbol="⚡ "
+symbol="> "
 
 export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\n$symbol\[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
