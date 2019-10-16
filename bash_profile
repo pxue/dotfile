@@ -12,6 +12,15 @@ for file in ~/.{path,exports,aliases,extra}; do
 done
 unset file
 
+# git completion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+if [ -f ~/.git-prompt.sh ]; then
+  . ~/.git-prompt.sh
+fi
+
 ### Prompt Colors 
 # Modified version of @gf3’s Sexy Bash Prompt 
 # (https://github.com/gf3/dotfiles)
@@ -70,22 +79,18 @@ export WHITE
 export BOLD
 export RESET
 
-symbol="> "
+symbol="\[$ORANGE\]› "
 
-export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]in \[$GREEN\]\w\[$WHITE\]\n$symbol\[$RESET\]"
+export PS1="\[${BOLD}${MAGENTA}\]\u \[$WHITE\]in \[$GREEN\]\w \[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
 
 export CLICOLOR=1
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 
 . ~/dotfile/s/s.sh
+. ~/dotfile/timer.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-# git completion
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
-fi
 
 # virtualenvwrapper
 # source /usr/local/bin/virtualenvwrapper.sh
@@ -101,3 +106,5 @@ export NVM_DIR="/Users/pxue/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export PATH="$HOME/.yarn/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"

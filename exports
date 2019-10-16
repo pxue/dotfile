@@ -1,8 +1,6 @@
 export CC=clang
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/go
-export PATH=$PATH:$HOME/go/bin
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 export LC_CTYPE=en_US.UTF-8
 

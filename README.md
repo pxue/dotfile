@@ -7,3 +7,7 @@ https://github.com/mathiasbynens/dotfiles/blob/master/
 forw: Esc + F
 back: Esc + B
 delete word: Send Hex 0x1B 0x08
+
+--- brews
+
+direnv

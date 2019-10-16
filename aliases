@@ -1,5 +1,4 @@
 # Navigations & Listings
-alias ll="ls -alhG"
 alias ..="cd .."
 alias l="ls -lG"
 alias db="cd ~/Dropbox"
