@@ -1,3 +1,5 @@
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="/Users/paul/.gem/ruby/2.7.0/bin:$PATH"
 export PATH="$PATH:$HOME/dotfile/bin"
 export POSTGRES_BIN_PATH="/Applications/Postgres.app/Contents/Versions/latest/bin"
 export PATH=$POSTGRES_BIN_PATH:$PATH

@@ -8,6 +8,7 @@
 [alias]
     up = !git stash && git fetch && git pull --rebase --prune $@ && git stash pop
     undo = reset HEAD^ --mixed
+    unstage = restore --staged
     amend = commit -a --amend
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
     db = !git branch --merged | egrep -v \"(^\\*|master|dev)\" | xargs git branch -d

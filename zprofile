@@ -6,10 +6,19 @@ for file in ~/.{path,exports,aliases,extra}; do
 done
 unset file
 
-# Git completion scripts
-fpath=(~/.zsh $fpath)
+#my_zsh_fpath=$HOME/dotfile/zfunc
+
+# Autoload scripts
+#fpath=($my_zsh_fpath $fpath)
+
+#unset my_zsh_fpath
 
 # auto load scripts
-# autoload -Uz compinit && compinit
+#autoload -Uz compinit && compinit
 
 ## auto env
+eval "$(direnv hook zsh)"
+
+## reclaim flow control
+stty stop undef
+stty start undef
