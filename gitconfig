@@ -11,7 +11,7 @@
     unstage = restore --staged
     amend = commit -a --amend
     wipe = !git add -A && git commit -qm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-    db = !git branch --merged | egrep -v \"(^\\*|master|dev)\" | xargs git branch -d
+    db = !git branch --merged | egrep -v \"(^\\*|master|main|dev)\" | xargs git branch -d
     logs = !git log --oneline --abbrev-commit
     ca = !git commit -am
     c = !git commit -m

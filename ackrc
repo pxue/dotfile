@@ -1,0 +1,21 @@
+# Development
+--ignore-dir=dist
+--ignore-dir=build
+--ignore-dir=.build
+--ignore-dir=vendor
+--ignore-dir=.vendor
+--ignore-dir=tmp
+--ignore-dir=log
+--ignore-dir=sourcemaps
+--ignore-dir=.venv
+--ignore-dir=__coverage__
+
+# Javascript
+--ignore-dir=node_modules
+--ignore-dir=.next
+
+# React JSX
+--type-set=jsx=.jsx
+
+# Sort
+--sort-files
