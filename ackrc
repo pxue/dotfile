@@ -10,9 +10,16 @@
 --ignore-dir=.venv
 --ignore-dir=__coverage__
 
+# Logs
+--ignore-file=is:yarn-error.log
+--ignore-file=is:yarn.lock
+--ignore-file=is:go.sum
+--ignore-file=is:tsconfig.tsbuildinfo
+
 # Javascript
---ignore-dir=node_modules
+# --ignore-dir=node_modules
 --ignore-dir=.next
+--ignore-dir=.turbo
 
 # React JSX
 --type-set=jsx=.jsx

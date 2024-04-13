@@ -63,12 +63,15 @@ ZSH_THEME="robbyrussell"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Lazy load NVM
+export NVM_LAZY=1
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx)
+plugins=(git macos nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,4 +102,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # twilio autocomplete setup
-TWILIO_AC_ZSH_SETUP_PATH=/Users/paul/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
+# TWILIO_AC_ZSH_SETUP_PATH=/Users/paul/.twilio-cli/autocomplete/zsh_setup && test -f $TWILIO_AC_ZSH_SETUP_PATH && source $TWILIO_AC_ZSH_SETUP_PATH;
+
+# Ulimit
+ulimit -n 2046
